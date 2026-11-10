@@ -1,0 +1,23 @@
+{
+  "title": "Network & device inventory",
+  "subtitle": "{{count}} monitored devices across all sites. Select a device for live metrics, interfaces and logs.",
+  "search": "Search hostname, IP, model…",
+  "matches": "{{count}} devices match",
+  "col": {
+    "status": "Status",
+    "device": "Device",
+    "type": "Type",
+    "site": "Site",
+    "model": "Vendor · model",
+    "cpu": "CPU",
+    "mem": "Memory",
+    "latency": "Latency",
+    "traffic": "Traffic",
+    "uptime": "Uptime",
+    "alerts": "Alerts"
+  },
+  "downFor": "Down {{d}}",
+  "csvName": "device-inventory",
+  "emptyTitle": "No devices found",
+  "emptyBody": "Try a different search term or clear the filters."
+}

@@ -1,0 +1,74 @@
+{
+  "back": "Back to inventory",
+  "notFound": "Device not found",
+  "facts": {
+    "uptime": "Uptime",
+    "downSince": "Unreachable since",
+    "lastBoot": "Last boot",
+    "criticality": "Criticality",
+    "upstream": "Upstream",
+    "tier1": "Tier 1 · business critical",
+    "tier2": "Tier 2 · important",
+    "tier3": "Tier 3 · standard"
+  },
+  "actions": {
+    "viewLogs": "View logs",
+    "viewTopology": "Show in topology",
+    "ackAll": "Acknowledge open alerts"
+  },
+  "live": {
+    "current": "Current",
+    "unreachable": "No data — device unreachable",
+    "polling": "Polling every 3 s"
+  },
+  "charts": {
+    "title": "Performance",
+    "subtitle": "Live and historical metrics · times in Riyadh (AST)",
+    "utilization": "CPU & memory",
+    "bandwidth": "Bandwidth",
+    "latency": "Latency",
+    "loss": "Packet loss",
+    "temp": "Temperature",
+    "power": "Load & battery"
+  },
+  "interfaces": {
+    "title": "Interfaces",
+    "subtitle": "{{up}} of {{total}} up",
+    "name": "Interface",
+    "kind": "Role",
+    "carrier": "Carrier",
+    "speed": "Speed",
+    "status": "Status",
+    "in": "In",
+    "out": "Out",
+    "errors": "Errors (24h)"
+  },
+  "alerts": {
+    "title": "Recent alerts",
+    "empty": "No alerts on this device in the last 14 days."
+  },
+  "logs": {
+    "title": "Related logs",
+    "empty": "No recent log lines from this device.",
+    "openExplorer": "Open in log explorer"
+  },
+  "uptime": {
+    "title": "Uptime history · 90 days",
+    "subtitle": "Daily availability (AST calendar days)",
+    "d7": "7 days",
+    "d30": "30 days",
+    "d90": "90 days",
+    "legendFull": "100%",
+    "legendMinor": "≥ 99.5%",
+    "legendMajor": "≥ 98%",
+    "legendOutage": "< 98%",
+    "noData": "No data",
+    "dayTooltip": "{{date}} · {{value}}"
+  },
+  "related": {
+    "title": "Dependencies",
+    "upstream": "Connected upstream to",
+    "downstream": "Downstream / hosted",
+    "none": "None"
+  }
+}

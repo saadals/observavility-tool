@@ -1,0 +1,71 @@
+{
+  "title": "Reports",
+  "subtitle": "Ready-made bilingual reports for management, auditors and service reviews. Scheduled delivery follows the Sunday–Thursday work week.",
+  "period": "Period",
+  "schedule": "Schedule",
+  "formats": "PDF · Arabic & English",
+  "lastGenerated": "Last generated {{time}}",
+  "cards": {
+    "sla": {
+      "title": "Monthly SLA report",
+      "desc": "Availability per site and service against targets, with business-hours SLA and downtime breakdown.",
+      "schedule": "Monthly · 1st working day · 08:00 AST"
+    },
+    "capacity": {
+      "title": "Capacity forecast",
+      "desc": "Storage and WAN growth trends with projected dates for reaching capacity thresholds.",
+      "schedule": "Monthly · 2nd Sunday · 09:00 AST"
+    },
+    "compliance": {
+      "title": "Compliance summary",
+      "desc": "Monitoring evidence mapped to NCA ECC, PDPL and SAMA control areas (illustrative).",
+      "schedule": "Quarterly · first Sunday"
+    },
+    "executive": {
+      "title": "Weekly executive summary",
+      "desc": "Health score, top incidents and risks for the week, written for leadership.",
+      "schedule": "Weekly · Thursday 15:00 AST"
+    },
+    "incidents": {
+      "title": "Incident & alert review",
+      "desc": "MTTA/MTTR, noisiest devices and alert trends to tune rules and on-call load.",
+      "schedule": "Weekly · Sunday 08:00 AST"
+    },
+    "carriers": {
+      "title": "Carrier & WAN performance",
+      "desc": "Latency, packet loss and availability per carrier link — useful evidence for carrier SLA discussions.",
+      "schedule": "Monthly · 1st working day"
+    }
+  },
+  "preview": {
+    "title": "{{name}} — preview",
+    "sample": "Preview generated from demo data",
+    "site": "Site",
+    "availability": "Availability",
+    "businessHours": "Business hours",
+    "target": "Target",
+    "met": "Met",
+    "missed": "Missed",
+    "downtime": "Downtime",
+    "volume": "Volume",
+    "current": "Current",
+    "growth": "Growth / day",
+    "eta": "Reaches 90%",
+    "exceeded": "Already above",
+    "stable": "Stable",
+    "inDays": "in {{n}} days",
+    "storage": "Storage — fastest-growing volumes",
+    "wan": "Primary WAN links — 95th percentile utilization (30 days)",
+    "history": "Disk usage · 60 days + 30-day projection",
+    "forecast": "Projection",
+    "link": "Link",
+    "p95": "p95",
+    "complianceNote": "Illustrative mapping for discussion only — not a certification or audit result.",
+    "openCompliance": "Open data residency & compliance page",
+    "kpis": "Key figures",
+    "healthScore": "Health score",
+    "alertsRaised": "Alerts raised",
+    "mtta": "Mean time to acknowledge",
+    "mttr": "Mean time to resolve"
+  }
+}

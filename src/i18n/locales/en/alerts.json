@@ -1,0 +1,57 @@
+{
+  "title": "Alerts center",
+  "subtitle": "Triage, acknowledge and resolve alerts across all sites. Actions are saved for this browser session.",
+  "rulesLink": "Manage alert rules",
+  "summary": {
+    "openCritical": "Open critical",
+    "openWarning": "Open warning",
+    "acknowledged": "Acknowledged",
+    "resolved24": "Resolved · 24 h",
+    "mtta": "Mean time to acknowledge"
+  },
+  "filters": {
+    "search": "Search alerts or devices…",
+    "range": "Time range",
+    "any": "Any time",
+    "active": "Active"
+  },
+  "col": {
+    "alert": "Alert",
+    "device": "Device",
+    "created": "Raised",
+    "duration": "Duration",
+    "owner": "Owner"
+  },
+  "bulk": {
+    "acknowledge": "Acknowledge selected",
+    "resolve": "Resolve selected"
+  },
+  "detail": {
+    "timeline": "Timeline",
+    "raised": "Alert raised",
+    "acknowledged": "Acknowledged by {{name}}",
+    "resolved": "Resolved by {{name}}",
+    "runbook": "Suggested next step",
+    "openDevice": "Open device"
+  },
+  "emptyTitle": "No alerts match",
+  "emptyBody": "Nothing matches the current filters. That is usually good news.",
+  "runbooks": {
+    "deviceDown": "Check power and the upstream switch port, then confirm reachability from the site edge router.",
+    "linkDown": "Open a ticket with the carrier and confirm traffic has failed over to the backup link.",
+    "cpuHigh": "Identify the top processes or sessions; consider moving workload to the standby node.",
+    "memHigh": "Look for memory leaks or ballooning VMs; rebalance the cluster if needed.",
+    "diskFull": "Purge old logs or archives, or extend the volume before writes start failing.",
+    "highLatency": "Compare latency on the primary and backup paths and check for congestion on the WAN.",
+    "packetLoss": "Check interface errors and the carrier SLA probe; escalate if loss persists beyond 15 minutes.",
+    "tempHigh": "Verify cooling in the comms room and that fans are operating normally.",
+    "upsOnBattery": "Confirm the mains supply with facilities; prepare a graceful shutdown if runtime drops below 10 minutes.",
+    "certExpiring": "Renew the certificate and schedule deployment in the next change window.",
+    "configChanged": "Review the configuration diff and confirm there is an approved change request.",
+    "backupFailed": "Re-run the job and check repository capacity and credentials.",
+    "interfaceFlapping": "Inspect the cable/SFP and the connected device; consider disabling the port temporarily.",
+    "bgpPeerDown": "Check the peer's reachability and BGP timers; verify the carrier circuit status.",
+    "appErrorRate": "Review recent deployments and error logs for the service.",
+    "appLatency": "Check dependency latency (database, gateway) and recent traffic changes."
+  }
+}

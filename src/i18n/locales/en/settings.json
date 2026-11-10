@@ -1,0 +1,55 @@
+{
+  "title": "Settings",
+  "subtitle": "Personal preferences for this demo console. Saved in this browser.",
+  "region": {
+    "title": "Language & region",
+    "language": "Interface language",
+    "dateFormat": "Calendar",
+    "dateFormatHint": "Applies to dates across dashboards, alerts and reports.",
+    "example": "Today: {{date}}",
+    "clock": "Time format",
+    "clock24": "24-hour",
+    "clock12": "12-hour",
+    "timezone": "Time zone",
+    "timezoneValue": "Arabia Standard Time — Riyadh (UTC+3)",
+    "workweek": "Work week",
+    "workweekValue": "Sunday – Thursday · weekend Friday–Saturday"
+  },
+  "appearance": {
+    "title": "Appearance",
+    "theme": "Theme",
+    "dark": "Dark (NOC)",
+    "light": "Light",
+    "compactSidebar": "Collapsed sidebar",
+    "compactSidebarHint": "Show icons only in the navigation sidebar on large screens."
+  },
+  "notifications": {
+    "title": "Notification channels",
+    "subtitle": "Where alerts are delivered. Delivery is simulated in this demo.",
+    "email": "E-mail",
+    "emailHint": "Alert e-mails in Arabic and English",
+    "sms": "SMS",
+    "smsHint": "Via a Saudi SMS gateway (sender ID registration required)",
+    "whatsapp": "WhatsApp",
+    "whatsappHint": "Business messaging templates for critical alerts",
+    "chatops": "Slack / Microsoft Teams",
+    "chatopsHint": "Post alerts to a channel through an incoming webhook",
+    "emailAddress": "Alert e-mail address",
+    "phone": "Mobile number for SMS / WhatsApp",
+    "webhook": "Webhook URL",
+    "webhookPlaceholder": "https://…",
+    "test": "Send test notification",
+    "testSent": "Test notification sent",
+    "testSentBody": "Simulated delivery via {{channels}}.",
+    "noneEnabled": "Enable at least one channel to send a test."
+  },
+  "data": {
+    "title": "Demo data",
+    "live": "Live updates",
+    "liveHint": "Metrics tick every 3 seconds; new alerts and log lines appear automatically.",
+    "reset": "Reset demo data",
+    "resetHint": "Restores the original devices, alerts and logs. Leads and preferences are kept.",
+    "residency": "Data location",
+    "residencyValue": "Riyadh DC1 (primary) · Jeddah DC2 (disaster recovery)"
+  }
+}

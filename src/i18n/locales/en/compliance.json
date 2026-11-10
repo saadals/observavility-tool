@@ -1,0 +1,94 @@
+{
+  "title": "Data residency & compliance",
+  "subtitle": "Where your monitoring data lives, how it moves, and how the platform is designed to support Saudi regulatory expectations.",
+  "hero": {
+    "title": "Your monitoring data never leaves the Kingdom",
+    "body": "Metrics, logs, alerts, configuration snapshots and user activity are collected, processed, stored and backed up exclusively in data centers located in Saudi Arabia. Support engineers who can access your tenant are based in the Kingdom.",
+    "badge": "In-Kingdom only",
+    "illustrative": "Illustrative placeholder content for market validation"
+  },
+  "dc": {
+    "title": "Hosting locations",
+    "primary": "Primary",
+    "dr": "Disaster recovery",
+    "dc1Desc": "Primary processing, storage and the web console. Central region.",
+    "dc2Desc": "Synchronous replica for disaster recovery. Western region.",
+    "facts": {
+      "rpo": "RPO",
+      "rto": "RTO",
+      "encryption": "Encryption at rest",
+      "rpoValue": "≤ 15 min",
+      "rtoValue": "≤ 4 h",
+      "encryptionValue": "AES-256"
+    },
+    "mapNote": "Data center locations are shown for illustration; final facilities will be confirmed with pilot customers."
+  },
+  "flow": {
+    "title": "How your data flows",
+    "subtitle": "Every hop stays inside Saudi Arabia",
+    "s1": "Collectors on your network",
+    "s1d": "Lightweight agents and SNMP/syslog collectors run on-premises at your sites.",
+    "s2": "Encrypted transport",
+    "s2d": "TLS 1.3 over in-Kingdom carrier links or a private VPN to the platform.",
+    "s3": "Processing & storage",
+    "s3d": "Riyadh DC1 — time-series, logs and alerts, encrypted at rest.",
+    "s4": "In-Kingdom disaster recovery",
+    "s4d": "Continuous replication to Jeddah DC2. No replicas abroad.",
+    "s5": "Bilingual console & reports",
+    "s5d": "Role-based access, MFA and a full audit trail of every action.",
+    "noCrossBorder": "No cross-border transfer"
+  },
+  "principles": {
+    "title": "Residency & security principles",
+    "p1": "No telemetry, crash reports or usage analytics are sent outside the Kingdom.",
+    "p2": "Encryption keys are managed in-Kingdom; customer-managed keys available on Enterprise.",
+    "p3": "Configurable retention per data type, with verifiable deletion on request.",
+    "p4": "Personal data in logs can be masked at the collector before it leaves your network.",
+    "p5": "Every console and API action is recorded in a tamper-evident audit log.",
+    "p6": "Optional dedicated tenant or on-premises deployment for highly regulated entities."
+  },
+  "frameworks": {
+    "title": "Regulatory alignment",
+    "subtitle": "Control areas the platform is designed to support. Each item notes whether it is supported by the platform, shared with your team, or remains your responsibility.",
+    "all": "All frameworks",
+    "nca": "NCA ECC",
+    "ncaFull": "National Cybersecurity Authority — Essential Cybersecurity Controls",
+    "pdpl": "PDPL",
+    "pdplFull": "Personal Data Protection Law",
+    "sama": "SAMA",
+    "samaFull": "Saudi Central Bank — Cyber Security Framework (financial entities)",
+    "designed": "Designed to support alignment with {{name}}"
+  },
+  "status": {
+    "supported": "Supported by platform",
+    "shared": "Shared responsibility",
+    "customer": "Customer responsibility"
+  },
+  "controls": {
+    "nca-assets": { "title": "Asset management", "desc": "Automatic discovery and an up-to-date inventory of network, server and facility assets." },
+    "nca-logging": { "title": "Cybersecurity event logs & monitoring", "desc": "Centralised collection, retention and search of security-relevant logs from all sites." },
+    "nca-incident": { "title": "Incident & threat management", "desc": "Alerting, escalation and timelines that feed your incident response process." },
+    "nca-network": { "title": "Network security management", "desc": "Monitoring of firewall health, configuration changes and unexpected interface activity." },
+    "nca-iam": { "title": "Identity & access management", "desc": "Role-based access, MFA, SSO and periodic access review exports for the console." },
+    "nca-backup": { "title": "Backup & recovery management", "desc": "Visibility of backup job success, failures and repository capacity." },
+    "nca-cloud": { "title": "Third-party & cloud cybersecurity", "desc": "Service hosted entirely in Saudi Arabia with documented security responsibilities." },
+    "nca-resilience": { "title": "Cybersecurity resilience", "desc": "In-Kingdom disaster recovery site and availability reporting for business continuity." },
+    "nca-vuln": { "title": "Vulnerability management", "desc": "Scanning remains with your tooling; integrations to correlate findings are on the roadmap." },
+    "pdpl-residency": { "title": "Data processed inside the Kingdom", "desc": "All monitoring data is processed and stored in Saudi data centers." },
+    "pdpl-transfer": { "title": "Cross-border transfer controls", "desc": "No replication, backup or support access from outside Saudi Arabia." },
+    "pdpl-minimization": { "title": "Data minimisation", "desc": "Collector-side masking of personal data (e.g. national ID, mobile numbers) in logs." },
+    "pdpl-retention": { "title": "Retention & deletion", "desc": "Per-type retention policies with automatic, auditable deletion." },
+    "pdpl-breach": { "title": "Breach detection support", "desc": "Alerts and evidence exports that support your breach notification workflow." },
+    "pdpl-rights": { "title": "Data subject requests", "desc": "Handled by your organisation; the platform provides search and export to help locate data." },
+    "sama-monitoring": { "title": "Security monitoring & event management", "desc": "Continuous monitoring with correlation-ready logs and alert history." },
+    "sama-availability": { "title": "Availability & capacity management", "desc": "SLA reporting, capacity forecasts and business-hours availability metrics." },
+    "sama-audit": { "title": "Audit trail & log retention", "desc": "Tamper-evident audit logs with long-term retention options." },
+    "sama-outsourcing": { "title": "Outsourcing & third-party risk", "desc": "In-Kingdom hosting and support, with documentation for your vendor-risk review." },
+    "sama-bcm": { "title": "Business continuity", "desc": "Documented RPO/RTO and DR testing evidence for your BCM programme." },
+    "sama-change": { "title": "Change management evidence", "desc": "Configuration change alerts and history to support change-control reviews." }
+  },
+  "disclaimer": {
+    "title": "Important",
+    "body": "This page is an illustrative placeholder for a demo prototype. {{brand}} is not certified or attested against NCA ECC, PDPL or SAMA requirements. Statements describe intended design goals to support your own compliance programme and must be validated with your compliance and legal teams."
+  }
+}

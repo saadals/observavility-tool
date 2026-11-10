@@ -1,0 +1,67 @@
+{
+  "title": "Executive overview",
+  "subtitle": "Real-time health of your infrastructure across {{sites}} Saudi sites and 2 data centers.",
+  "health": {
+    "title": "Overall health score",
+    "availability30": "Availability (30d)",
+    "mttr": "Mean time to resolve (14d)",
+    "good": "Healthy",
+    "attention": "Needs attention",
+    "poor": "Degraded"
+  },
+  "devices": {
+    "title": "Devices",
+    "monitored": "monitored",
+    "viewInventory": "View inventory"
+  },
+  "alerts": {
+    "title": "Active alerts",
+    "unacked": "{{count}} not yet acknowledged",
+    "viewAll": "Open alerts center"
+  },
+  "sla": {
+    "title": "SLA uptime · 30 days",
+    "target": "Target {{value}}",
+    "aboveTarget": "Above target",
+    "belowTarget": "Below target",
+    "businessHours": "Business hours (Sun–Thu): {{value}}"
+  },
+  "map": {
+    "title": "Site health across the Kingdom",
+    "subtitle": "Hover for details · click a site to view its devices",
+    "aria": "Map of Saudi Arabia showing monitored sites and their health",
+    "dc": "Data center",
+    "summary": "{{up}} up · {{warning}} warning · {{down}} down",
+    "alerts": "{{count}} active alerts",
+    "devices": "{{count}} devices",
+    "legendLink": "WAN link",
+    "legendDown": "Link down",
+    "legendDci": "DC interconnect"
+  },
+  "sites": {
+    "title": "Sites",
+    "col": {
+      "site": "Site",
+      "devices": "Devices",
+      "health": "Health",
+      "alerts": "Alerts"
+    }
+  },
+  "problems": {
+    "title": "Top 5 problem devices",
+    "subtitle": "Ranked by status, active alerts and criticality",
+    "none": "No problem devices right now."
+  },
+  "bandwidth": {
+    "title": "WAN bandwidth",
+    "subtitle": "Aggregate traffic across all carrier links",
+    "peak": "Peak",
+    "current": "Now",
+    "inbound": "Inbound",
+    "outbound": "Outbound"
+  },
+  "recent": {
+    "title": "Live alert feed",
+    "subtitle": "Newest first · updates automatically"
+  }
+}

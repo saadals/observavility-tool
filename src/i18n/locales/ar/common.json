@@ -1,0 +1,400 @@
+{
+  "app": {
+    "tagline": "منصة موحّدة لمراقبة البنية التحتية، مستضافة داخل المملكة العربية السعودية",
+    "hostedInKsa": "مستضاف في المملكة العربية السعودية",
+    "skipToContent": "الانتقال إلى المحتوى الرئيسي",
+    "loading": "جارٍ التحميل…",
+    "notFoundTitle": "الصفحة غير موجودة",
+    "notFoundBody": "الصفحة التي تبحث عنها غير متوفرة في هذه النسخة التجريبية.",
+    "goHome": "الانتقال إلى النظرة العامة"
+  },
+  "nav": {
+    "sections": {
+      "monitor": "المراقبة",
+      "operate": "التشغيل",
+      "company": "الباقات والثقة",
+      "admin": "الإدارة"
+    },
+    "overview": "نظرة عامة",
+    "network": "الشبكة",
+    "topology": "مخطط الشبكة",
+    "servers": "الخوادم والتطبيقات",
+    "alerts": "التنبيهات",
+    "rules": "قواعد التنبيه",
+    "logs": "السجلات",
+    "reports": "التقارير",
+    "compliance": "إقامة البيانات",
+    "pricing": "الأسعار",
+    "settings": "الإعدادات",
+    "leads": "طلبات الوصول المبكر",
+    "collapse": "طيّ الشريط الجانبي",
+    "expand": "توسيع الشريط الجانبي",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "signIn": "تسجيل الدخول"
+  },
+  "header": {
+    "earlyAccess": "اطلب الوصول المبكر",
+    "earlyAccessShort": "وصول مبكر",
+    "search": "ابحث عن جهاز أو عنوان IP…",
+    "searchNoResults": "لا توجد أجهزة مطابقة",
+    "notifications": "الإشعارات",
+    "noNotifications": "لا توجد تنبيهات نشطة. كل شيء على ما يرام.",
+    "viewAllAlerts": "عرض جميع التنبيهات",
+    "toggleTheme": "تبديل المظهر",
+    "themeDark": "داكن",
+    "themeLight": "فاتح",
+    "switchLanguage": "English",
+    "switchLanguageLabel": "التبديل إلى اللغة الإنجليزية",
+    "logout": "تسجيل الخروج",
+    "live": "مباشر",
+    "paused": "متوقف مؤقتًا",
+    "tz": "توقيت الرياض · UTC+3",
+    "signedInAs": "مسجّل الدخول باسم",
+    "account": "الحساب"
+  },
+  "actions": {
+    "acknowledge": "إقرار",
+    "resolve": "حلّ",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "close": "إغلاق",
+    "apply": "تطبيق",
+    "reset": "إعادة تعيين",
+    "export": "تصدير",
+    "exportCsv": "تصدير CSV",
+    "downloadPdf": "تنزيل PDF",
+    "preview": "معاينة",
+    "search": "بحث",
+    "clear": "مسح",
+    "clearFilters": "مسح عوامل التصفية",
+    "filters": "عوامل التصفية",
+    "viewDetails": "عرض التفاصيل",
+    "back": "رجوع",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "create": "إنشاء",
+    "viewAll": "عرض الكل",
+    "loadMore": "تحميل المزيد",
+    "submit": "إرسال",
+    "continue": "متابعة",
+    "copy": "نسخ"
+  },
+  "status": {
+    "up": "يعمل",
+    "warning": "تحذير",
+    "down": "متوقف",
+    "unknown": "غير معروف",
+    "healthy": "سليم",
+    "degraded": "أداء متراجع",
+    "critical": "حرج",
+    "standby": "احتياطي",
+    "all": "كل الحالات"
+  },
+  "severity": {
+    "critical": "حرج",
+    "warning": "تحذير",
+    "info": "معلومة",
+    "all": "كل المستويات"
+  },
+  "alertState": {
+    "open": "مفتوح",
+    "acknowledged": "تم الإقرار",
+    "resolved": "تم الحل",
+    "active": "نشط",
+    "all": "كل الحالات"
+  },
+  "deviceTypes": {
+    "coreRouter": "موجّه رئيسي",
+    "edgeRouter": "موجّه طرفي",
+    "switch": "مبدّل شبكة",
+    "firewall": "جدار حماية",
+    "wlc": "وحدة تحكم لاسلكية",
+    "loadBalancer": "موازن أحمال",
+    "server": "خادم فعلي",
+    "vm": "خادم افتراضي",
+    "database": "قاعدة بيانات",
+    "ups": "مزوّد طاقة (UPS)",
+    "printer": "طابعة",
+    "all": "كل الأنواع"
+  },
+  "categories": {
+    "network": "الشبكة",
+    "compute": "الحوسبة",
+    "facility": "المرافق"
+  },
+  "sites": {
+    "ruh-hq": "المقر الرئيسي – الرياض",
+    "ruh-dc1": "مركز بيانات الرياض 1",
+    "jed-dc2": "مركز بيانات جدة 2",
+    "jed-br": "فرع جدة",
+    "dmm-br": "الدمام / الخبر",
+    "med-br": "المدينة المنورة",
+    "mkh-br": "مكة المكرمة",
+    "tuu-br": "تبوك",
+    "neom-br": "نيوم",
+    "ahb-br": "أبها",
+    "all": "كل المواقع"
+  },
+  "siteKinds": {
+    "hq": "المقر الرئيسي",
+    "datacenter": "مركز بيانات",
+    "branch": "فرع"
+  },
+  "carriers": {
+    "carrierA": "المشغّل A – ألياف ضوئية",
+    "carrierB": "المشغّل B – احتياطي 5G",
+    "carrierC": "المشغّل C – MPLS",
+    "carrierD": "المشغّل D – احتياطي LTE"
+  },
+  "linkKinds": {
+    "primary": "أساسي",
+    "backup": "احتياطي",
+    "dci": "ربط مراكز البيانات"
+  },
+  "metrics": {
+    "cpu": "المعالج",
+    "mem": "الذاكرة",
+    "disk": "التخزين",
+    "bwIn": "الوارد",
+    "bwOut": "الصادر",
+    "bandwidth": "عرض النطاق",
+    "latency": "زمن التأخير",
+    "loss": "فقدان الحزم",
+    "temp": "درجة الحرارة",
+    "battery": "البطارية",
+    "load": "الحمل",
+    "uptime": "مدة التشغيل",
+    "availability": "التوفّر",
+    "bwUtil": "استهلاك عرض النطاق",
+    "status": "إمكانية الوصول",
+    "responseTime": "زمن الاستجابة",
+    "errorRate": "معدل الأخطاء",
+    "throughput": "معدل الطلبات"
+  },
+  "alertTypes": {
+    "deviceDown": "الجهاز لا يستجيب",
+    "linkDown": "انقطاع وصلة WAN: ‏{{iface}} ({{carrier}})",
+    "cpuHigh": "ارتفاع استخدام المعالج ({{value}}%)",
+    "memHigh": "ارتفاع استخدام الذاكرة ({{value}}%)",
+    "diskFull": "مساحة التخزين على وشك الامتلاء ({{value}}% في ‎{{mount}}‎)",
+    "highLatency": "ارتفاع زمن التأخير ({{value}} ms)",
+    "packetLoss": "فقدان الحزم بنسبة {{value}}%",
+    "tempHigh": "ارتفاع درجة الحرارة ({{value}}°C)",
+    "upsOnBattery": "مزوّد الطاقة يعمل على البطارية — يتبقى نحو {{runtime}} دقيقة",
+    "certExpiring": "تنتهي صلاحية شهادة TLS ‏{{cn}} خلال {{days}} يومًا",
+    "configChanged": "تم تعديل الإعدادات بواسطة {{user}}",
+    "backupFailed": "فشل مهمة النسخ الاحتياطي «{{job}}»",
+    "interfaceFlapping": "تذبذب المنفذ {{iface}} ({{count}} تغييرات خلال 10 دقائق)",
+    "bgpPeerDown": "انقطاع جلسة BGP مع {{peer}}",
+    "appErrorRate": "ارتفاع معدل الأخطاء",
+    "appLatency": "بطء زمن الاستجابة"
+  },
+  "logLevels": {
+    "critical": "حرج",
+    "error": "خطأ",
+    "warning": "تحذير",
+    "info": "معلومة",
+    "debug": "تتبّع"
+  },
+  "facilities": {
+    "system": "النظام",
+    "network": "الشبكة",
+    "security": "الأمن",
+    "application": "التطبيقات",
+    "database": "قواعد البيانات",
+    "auth": "المصادقة"
+  },
+  "timeRanges": {
+    "live": "مباشر",
+    "15m": "15 دقيقة",
+    "1h": "ساعة",
+    "6h": "6 ساعات",
+    "24h": "24 ساعة",
+    "7d": "7 أيام",
+    "14d": "14 يومًا",
+    "30d": "30 يومًا",
+    "90d": "90 يومًا"
+  },
+  "duration": {
+    "d_zero": "0 يوم",
+    "d_one": "يوم",
+    "d_two": "يومان",
+    "d_few": "{{count}} أيام",
+    "d_many": "{{count}} يومًا",
+    "d_other": "{{count}} يوم",
+    "h_zero": "0 ساعة",
+    "h_one": "ساعة",
+    "h_two": "ساعتان",
+    "h_few": "{{count}} ساعات",
+    "h_many": "{{count}} ساعة",
+    "h_other": "{{count}} ساعة",
+    "m_zero": "أقل من دقيقة",
+    "m_one": "دقيقة",
+    "m_two": "دقيقتان",
+    "m_few": "{{count}} دقائق",
+    "m_many": "{{count}} دقيقة",
+    "m_other": "{{count}} دقيقة"
+  },
+  "interfaces": {
+    "kinds": {
+      "wan": "WAN",
+      "uplink": "وصلة صاعدة",
+      "lan": "منفذ وصول",
+      "mgmt": "إدارة",
+      "server": "بطاقة شبكة خادم"
+    },
+    "status": {
+      "up": "يعمل",
+      "down": "متوقف",
+      "adminDown": "معطّل إداريًا"
+    }
+  },
+  "calendar": {
+    "gregorian": "ميلادي",
+    "hijri": "هجري (أم القرى)",
+    "both": "كلاهما"
+  },
+  "workweek": {
+    "label": "أيام العمل: الأحد – الخميس",
+    "weekend": "عطلة نهاية الأسبوع (الجمعة – السبت)",
+    "businessHours": "ساعات العمل 08:00–17:00 بتوقيت الرياض"
+  },
+  "table": {
+    "showing": "عرض {{from}}–{{to}} من أصل {{total}}",
+    "previous": "الصفحة السابقة",
+    "next": "الصفحة التالية",
+    "page": "الصفحة {{page}} من {{pages}}",
+    "rowsPerPage": "عدد الصفوف",
+    "sortBy": "الترتيب حسب {{col}}"
+  },
+  "empty": {
+    "title": "لا توجد بيانات للعرض",
+    "filters": "لا توجد عناصر تطابق عوامل التصفية الحالية.",
+    "noData": "لا توجد بيانات للفترة المحددة."
+  },
+  "toasts": {
+    "newCritical": "تنبيه حرج جديد على {{host}}",
+    "acknowledged_zero": "لم يتم الإقرار بأي تنبيه",
+    "acknowledged_one": "تم الإقرار بالتنبيه",
+    "acknowledged_two": "تم الإقرار بتنبيهين",
+    "acknowledged_few": "تم الإقرار بـ {{count}} تنبيهات",
+    "acknowledged_many": "تم الإقرار بـ {{count}} تنبيهًا",
+    "acknowledged_other": "تم الإقرار بـ {{count}} تنبيه",
+    "resolved_zero": "لم يتم حل أي تنبيه",
+    "resolved_one": "تم حل التنبيه",
+    "resolved_two": "تم حل تنبيهين",
+    "resolved_few": "تم حل {{count}} تنبيهات",
+    "resolved_many": "تم حل {{count}} تنبيهًا",
+    "resolved_other": "تم حل {{count}} تنبيه",
+    "pdfTitle": "تصدير PDF محاكى في هذه النسخة التجريبية",
+    "pdfBody": "في المنتج الفعلي، سيُنشأ تقرير «{{name}}» باللغتين العربية والإنجليزية ويُرسل إلى بريدك الإلكتروني.",
+    "settingsSaved": "تم حفظ التفضيلات",
+    "copied": "تم النسخ إلى الحافظة",
+    "demoReset": "تمت إعادة تعيين البيانات التجريبية"
+  },
+  "apps": {
+    "customer-portal": {
+      "name": "بوابة العملاء",
+      "desc": "بوابة الخدمة الذاتية للعملاء"
+    },
+    "mobile-backend": {
+      "name": "الخدمات الخلفية لتطبيق الجوال",
+      "desc": "واجهات برمجية لتطبيقات iOS وAndroid"
+    },
+    "hr-self-service": {
+      "name": "الخدمة الذاتية للموارد البشرية",
+      "desc": "الإجازات ومسيّرات الرواتب وطلبات الموظفين"
+    },
+    "api-gateway": {
+      "name": "بوابة الواجهات البرمجية",
+      "desc": "التوجيه والمصادقة وتحديد معدل الطلبات"
+    },
+    "identity-sso": {
+      "name": "الهوية والدخول الموحّد",
+      "desc": "الدخول الموحّد والتحقق متعدد العوامل"
+    },
+    "payments": {
+      "name": "خدمة المدفوعات",
+      "desc": "مدفوعات البطاقات والفواتير والمحافظ الرقمية"
+    },
+    "erp": {
+      "name": "نظام تخطيط الموارد (ERP)",
+      "desc": "المالية والمشتريات والمخزون"
+    },
+    "notification": {
+      "name": "خدمة الإشعارات",
+      "desc": "إرسال البريد الإلكتروني والرسائل النصية والإشعارات الفورية"
+    },
+    "dwh-etl": {
+      "name": "تحميل مستودع البيانات (ETL)",
+      "desc": "عمليات تحميل البيانات الليلية وكل ساعة"
+    }
+  },
+  "appTiers": {
+    "edge": "الواجهة",
+    "web": "الويب",
+    "api": "الواجهات البرمجية",
+    "service": "الخدمات",
+    "data": "البيانات"
+  },
+  "common": {
+    "devices": "الأجهزة",
+    "device": "الجهاز",
+    "site": "الموقع",
+    "type": "النوع",
+    "status": "الحالة",
+    "severity": "الخطورة",
+    "state": "حالة المعالجة",
+    "time": "الوقت",
+    "created": "وقت الإنشاء",
+    "ip": "عنوان IP",
+    "vendor": "المصنّع",
+    "model": "الطراز",
+    "os": "نظام التشغيل / البرنامج الثابت",
+    "serial": "الرقم التسلسلي",
+    "rack": "الخزانة",
+    "hostname": "اسم الجهاز",
+    "interfaces": "المنافذ",
+    "speed": "السرعة",
+    "utilization": "الاستخدام",
+    "in": "وارد",
+    "out": "صادر",
+    "name": "الاسم",
+    "description": "الوصف",
+    "actions": "الإجراءات",
+    "total": "الإجمالي",
+    "now": "الآن",
+    "ago": "مضت",
+    "lastUpdated": "آخر تحديث {{time}}",
+    "perMonth": "/ شهريًا",
+    "yes": "نعم",
+    "no": "لا",
+    "none": "لا يوجد",
+    "or": "أو",
+    "illustrative": "توضيحي",
+    "placeholder": "قيمة مؤقتة",
+    "selectAll": "تحديد الكل",
+    "selected": "تم تحديد {{count}}",
+    "by": "بواسطة {{name}}",
+    "you": "أنت",
+    "since": "منذ {{time}}",
+    "today": "اليوم",
+    "hijri": "هجري",
+    "gregorian": "ميلادي",
+    "alerts": "التنبيهات",
+    "openAlerts": "التنبيهات المفتوحة",
+    "learnMore": "اعرف المزيد"
+  },
+  "footer": {
+    "rights": "© {{year}} {{brand}} (اسم مؤقت). نموذج أولي تجريبي لاختبار السوق.",
+    "privacy": "تُحفظ طلبات الوصول المبكر في هذا المتصفح فقط."
+  },
+  "channels": {
+    "email": "البريد الإلكتروني",
+    "sms": "الرسائل النصية (SMS)",
+    "whatsapp": "واتساب",
+    "chatops": "Slack / Microsoft Teams"
+  }
+}

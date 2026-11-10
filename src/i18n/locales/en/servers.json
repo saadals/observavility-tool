@@ -1,0 +1,41 @@
+{
+  "title": "Servers & applications",
+  "subtitle": "Compute health across both data centers and branch servers, plus the business services that run on them.",
+  "kpi": {
+    "servers": "Servers, VMs & databases",
+    "avgCpu": "Average CPU",
+    "avgMem": "Average memory",
+    "apps": "Healthy services",
+    "appsOf": "{{ok}} of {{total}}"
+  },
+  "grid": {
+    "title": "Server health",
+    "subtitle": "Sorted by severity · select a tile for details",
+    "all": "All",
+    "physical": "Physical",
+    "virtual": "Virtual",
+    "databases": "Databases",
+    "empty": "No servers match the selected filters."
+  },
+  "apps": {
+    "title": "Application services",
+    "subtitle": "Golden signals from application instrumentation (simulated)",
+    "service": "Service",
+    "tier": "Tier",
+    "status": "Status",
+    "p95": "p95 response",
+    "slo": "SLO {{value}}",
+    "errors": "Error rate",
+    "rpm": "Requests / min",
+    "apdex": "Apdex",
+    "trend": "Response time · 1 h",
+    "hosts": "Hosts"
+  },
+  "deps": {
+    "title": "Service dependencies",
+    "subtitle": "How user traffic flows from the load balancers through services to the data tier",
+    "users": "Users & mobile apps",
+    "internet": "Internet",
+    "hint": "Click a database or load balancer to open the device"
+  }
+}

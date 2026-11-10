@@ -1,0 +1,31 @@
+{
+  "title": "Log explorer",
+  "subtitle": "Search syslog, security, application and database logs from every site — including Arabic-language application logs.",
+  "search": "Search messages, hosts, IPs… (Arabic supported)",
+  "liveTail": "Live tail",
+  "liveOn": "Streaming new lines",
+  "liveOff": "Paused — showing a snapshot",
+  "source": "Source",
+  "allSources": "All sources",
+  "facility": "Facility",
+  "allFacilities": "All facilities",
+  "volume": "Log volume",
+  "results": "{{shown}} of {{total}} lines",
+  "col": {
+    "time": "Time (AST)",
+    "level": "Level",
+    "source": "Source",
+    "message": "Message"
+  },
+  "detail": {
+    "id": "Event ID",
+    "timestamp": "Timestamp",
+    "device": "Device",
+    "openDevice": "Open device",
+    "filterSource": "Filter by this source"
+  },
+  "emptyTitle": "No log lines found",
+  "emptyBody": "Try a wider time range, fewer filters or a different search term.",
+  "csvName": "logs-export",
+  "retention": "Retention in this plan: 180 days · stored in Riyadh DC1 and Jeddah DC2"
+}

@@ -1,0 +1,83 @@
+{
+  "title": "Alert rules",
+  "subtitle": "Define when {{brand}} raises alerts and who is notified. Changes are saved in this browser.",
+  "newRule": "New rule",
+  "editRule": "Edit rule",
+  "resetDefaults": "Restore defaults",
+  "col": {
+    "enabled": "Enabled",
+    "name": "Rule",
+    "condition": "Condition",
+    "scope": "Applies to",
+    "severity": "Severity",
+    "channels": "Notify via"
+  },
+  "defaults": {
+    "r1": "Device unreachable",
+    "r2": "High CPU — physical servers",
+    "r3": "Disk almost full",
+    "r4": "WAN latency — branch routers",
+    "r5": "Packet loss",
+    "r6": "UPS on battery",
+    "r7": "Comms room temperature — HQ"
+  },
+  "metrics": {
+    "cpu": "CPU utilization",
+    "mem": "Memory usage",
+    "disk": "Disk usage",
+    "latency": "Latency",
+    "loss": "Packet loss",
+    "temp": "Temperature",
+    "bwUtil": "Bandwidth utilization",
+    "battery": "Battery charge",
+    "status": "Reachability"
+  },
+  "operators": {
+    "gt": "is above",
+    "gte": "is at or above",
+    "lt": "is below",
+    "lte": "is at or below"
+  },
+  "condition": "{{metric}} {{op}} {{value}} · {{duration}} min",
+  "conditionStatus": "Unreachable · {{duration}} min",
+  "scope": {
+    "all": "All devices",
+    "site": "A specific site",
+    "type": "A device type"
+  },
+  "builder": {
+    "name": "Rule name",
+    "namePlaceholder": "e.g. High CPU on payment servers",
+    "when": "When",
+    "metric": "Metric",
+    "operator": "Condition",
+    "threshold": "Threshold",
+    "duration": "For at least (minutes)",
+    "scope": "Apply to",
+    "scopeValue": "Which one",
+    "then": "Then",
+    "severity": "Alert severity",
+    "channels": "Notify via",
+    "businessHours": "Only during business hours (Sun–Thu, 08:00–17:00 AST)",
+    "preview": "Rule preview",
+    "matches": "Applies to {{count}} devices right now",
+    "backtest": "Backtest: would have fired {{count}} times in the last 7 days",
+    "backtestNone": "Backtest: would not have fired in the last 7 days",
+    "save": "Save rule",
+    "required": "Give the rule a name"
+  },
+  "sentence": "When {{metric}} {{op}} {{value}} for {{duration}} minutes on {{scope}}, raise a {{severity}} alert and notify via {{channels}}.",
+  "sentenceStatus": "When a device in {{scope}} is unreachable for {{duration}} minutes, raise a {{severity}} alert and notify via {{channels}}.",
+  "sentenceBh": "Evaluated during business hours only.",
+  "scopeAll": "all devices",
+  "scopeSite": "the {{value}} site",
+  "scopeType": "every {{value}}",
+  "noChannels": "the dashboard only",
+  "deleteTitle": "Delete this rule?",
+  "deleteBody": "“{{name}}” will stop raising alerts. This cannot be undone.",
+  "saved": "Rule saved",
+  "deleted": "Rule deleted",
+  "emptyTitle": "No alert rules",
+  "emptyBody": "Create a rule or restore the recommended defaults.",
+  "businessHoursBadge": "Business hours"
+}

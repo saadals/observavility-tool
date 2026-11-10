@@ -1,0 +1,278 @@
+@import 'tailwindcss';
+
+/* Dark mode is class-based so the user's choice (not the OS) wins. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                       */
+/* Palette: deep "oasis teal" brand, desert-sand accent, NOC-dark base */
+/* ------------------------------------------------------------------ */
+:root {
+  --bg: #f2f5f5;
+  --surface: #ffffff;
+  --surface-2: #f6f9f9;
+  --surface-3: #eaf0f1;
+  --border: #dbe4e6;
+  --border-strong: #c3d1d4;
+  --text: #0c1a1e;
+  --text-muted: #4d6168;
+  --text-subtle: #75878d;
+
+  --brand: #0d877d;
+  --brand-strong: #0a6f67;
+  --brand-fg: #ffffff;
+  --accent: #a87a2a;
+
+  --ok: #13844b;
+  --warn: #b0690a;
+  --crit: #c93131;
+  --info: #2563c4;
+  --unknown: #6f7f86;
+
+  --chart-1: #0d877d;
+  --chart-2: #6d5ccf;
+  --chart-3: #b0690a;
+  --chart-4: #2563c4;
+  --chart-grid: #e3eaec;
+
+  --shadow: 0 1px 2px rgb(12 26 30 / 0.06), 0 1px 1px rgb(12 26 30 / 0.04);
+  --shadow-lg: 0 18px 50px -12px rgb(12 26 30 / 0.25);
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #061013;
+  --surface: #0b171b;
+  --surface-2: #0f1e23;
+  --surface-3: #15272d;
+  --border: #1b2f36;
+  --border-strong: #27424b;
+  --text: #e4eef0;
+  --text-muted: #91a6ad;
+  --text-subtle: #62777e;
+
+  --brand: #22b8a8;
+  --brand-strong: #46d3c3;
+  --brand-fg: #04201d;
+  --accent: #d9b36a;
+
+  --ok: #3ad08a;
+  --warn: #f3b347;
+  --crit: #f26a6a;
+  --info: #62a8ff;
+  --unknown: #8798a0;
+
+  --chart-1: #2cc4b3;
+  --chart-2: #9d8cff;
+  --chart-3: #f3b347;
+  --chart-4: #62a8ff;
+  --chart-grid: #16282e;
+
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 24px 60px -12px rgb(0 0 0 / 0.65);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-fg: var(--text);
+  --color-muted: var(--text-muted);
+  --color-subtle: var(--text-subtle);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-fg: var(--brand-fg);
+  --color-accent: var(--accent);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-crit: var(--crit);
+  --color-info: var(--info);
+  --color-unknown: var(--unknown);
+
+  --font-sans: 'Inter Variable', 'IBM Plex Sans Arabic', ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: 'IBM Plex Sans Arabic', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  --shadow-card: var(--shadow);
+  --shadow-pop: var(--shadow-lg);
+
+  --animate-fade-in: fade-in 0.35s ease-out both;
+  --animate-fade-up: fade-up 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-shimmer: shimmer 1.4s linear infinite;
+  --animate-ping-soft: ping-soft 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animate-slide-in: slide-in 0.25s ease-out both;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+@keyframes ping-soft {
+  0% { transform: scale(1); opacity: 0.55; }
+  80%, 100% { transform: scale(2.4); opacity: 0; }
+}
+@keyframes slide-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+@layer base {
+  html {
+    background: var(--bg);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+    min-height: 100vh;
+  }
+  html[lang='ar'] body {
+    font-family: var(--font-arabic);
+    font-feature-settings: normal;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--brand) 35%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  button,
+  [role='button'] {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  input[type='number']::-webkit-inner-spin-button {
+    opacity: 0.6;
+  }
+  mark {
+    background: color-mix(in oklab, var(--accent) 35%, transparent);
+    color: inherit;
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+  /* Scrollbars */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  /* Keep Latin technical strings (hostnames, IPs, log lines) LTR inside Arabic UI. */
+  .ltr-text {
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+  }
+  /* Sadu-inspired triangle band — a nod to Saudi weaving, used as a thin decorative divider. */
+  .sadu-band {
+    background-color: var(--brand);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 12 6 0l6 12zM12 12 18 0l6 12z' fill='%23000' fill-opacity='.9'/%3E%3Cpath d='M6 12 9 6l3 6zM18 12l3-6 3 6z' fill='%23000' fill-opacity='.35'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 12 6 0l6 12zM12 12 18 0l6 12z' fill='%23000' fill-opacity='.9'/%3E%3Cpath d='M6 12 9 6l3 6zM18 12l3-6 3 6z' fill='%23000' fill-opacity='.35'/%3E%3C/svg%3E");
+    -webkit-mask-size: 16px 8px;
+    mask-size: 16px 8px;
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x;
+  }
+  /* Diamond lattice — subtle background texture for hero areas. */
+  .lattice {
+    background-color: var(--brand);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 0 40 20 20 40 0 20Z' fill='none' stroke='%23000' stroke-width='.8'/%3E%3Ccircle cx='20' cy='20' r='1.6' fill='%23000'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 0 40 20 20 40 0 20Z' fill='none' stroke='%23000' stroke-width='.8'/%3E%3Ccircle cx='20' cy='20' r='1.6' fill='%23000'/%3E%3C/svg%3E");
+    -webkit-mask-size: 40px 40px;
+    mask-size: 40px 40px;
+  }
+  .skeleton {
+    background: linear-gradient(90deg, var(--surface-3) 0%, var(--surface-2) 40%, var(--surface-3) 80%);
+    background-size: 200% 100%;
+    animation: var(--animate-shimmer);
+    border-radius: 8px;
+  }
+  .scroll-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scroll-thin::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 8px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Third-party: Recharts & React Flow theming                          */
+/* ------------------------------------------------------------------ */
+.recharts-wrapper {
+  font-size: 11px;
+}
+.recharts-cartesian-axis-tick-value {
+  fill: var(--text-subtle);
+}
+.recharts-tooltip-cursor {
+  stroke: var(--border-strong);
+}
+.recharts-surface:focus,
+.recharts-wrapper:focus,
+.recharts-wrapper *:focus {
+  outline: none;
+}
+
+.react-flow {
+  --xy-background-color: transparent;
+  --xy-node-border-radius: 10px;
+  --xy-edge-label-background-color: var(--surface);
+  --xy-edge-label-color: var(--text-muted);
+  --xy-controls-button-background-color: var(--surface);
+  --xy-controls-button-background-color-hover: var(--surface-3);
+  --xy-controls-button-color: var(--text);
+  --xy-controls-button-border-color: var(--border);
+  --xy-minimap-background-color: var(--surface-2);
+  --xy-attribution-background-color: transparent;
+}
+.react-flow__controls {
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.react-flow__minimap {
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

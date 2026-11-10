@@ -1,0 +1,380 @@
+{
+  "app": {
+    "tagline": "Unified infrastructure monitoring, hosted in Saudi Arabia",
+    "hostedInKsa": "Hosted in Saudi Arabia",
+    "skipToContent": "Skip to main content",
+    "loading": "Loading…",
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "The page you are looking for does not exist in this demo.",
+    "goHome": "Go to overview"
+  },
+  "nav": {
+    "sections": {
+      "monitor": "Monitor",
+      "operate": "Operate",
+      "company": "Plans & trust",
+      "admin": "Admin"
+    },
+    "overview": "Overview",
+    "network": "Network",
+    "topology": "Topology",
+    "servers": "Servers & apps",
+    "alerts": "Alerts",
+    "rules": "Alert rules",
+    "logs": "Logs",
+    "reports": "Reports",
+    "compliance": "Data residency",
+    "pricing": "Pricing",
+    "settings": "Settings",
+    "leads": "Early-access leads",
+    "collapse": "Collapse sidebar",
+    "expand": "Expand sidebar",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "signIn": "Sign in"
+  },
+  "header": {
+    "earlyAccess": "Request early access",
+    "earlyAccessShort": "Early access",
+    "search": "Search devices, IPs…",
+    "searchNoResults": "No matching devices",
+    "notifications": "Notifications",
+    "noNotifications": "No active alerts. All clear.",
+    "viewAllAlerts": "View all alerts",
+    "toggleTheme": "Switch theme",
+    "themeDark": "Dark",
+    "themeLight": "Light",
+    "switchLanguage": "العربية",
+    "switchLanguageLabel": "Switch language to Arabic",
+    "logout": "Sign out",
+    "live": "Live",
+    "paused": "Paused",
+    "tz": "AST · UTC+3",
+    "signedInAs": "Signed in as",
+    "account": "Account"
+  },
+  "actions": {
+    "acknowledge": "Acknowledge",
+    "resolve": "Resolve",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "apply": "Apply",
+    "reset": "Reset",
+    "export": "Export",
+    "exportCsv": "Export CSV",
+    "downloadPdf": "Download PDF",
+    "preview": "Preview",
+    "search": "Search",
+    "clear": "Clear",
+    "clearFilters": "Clear filters",
+    "filters": "Filters",
+    "viewDetails": "View details",
+    "back": "Back",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "create": "Create",
+    "viewAll": "View all",
+    "loadMore": "Load more",
+    "submit": "Submit",
+    "continue": "Continue",
+    "copy": "Copy"
+  },
+  "status": {
+    "up": "Up",
+    "warning": "Warning",
+    "down": "Down",
+    "unknown": "Unknown",
+    "healthy": "Healthy",
+    "degraded": "Degraded",
+    "critical": "Critical",
+    "standby": "Standby",
+    "all": "All statuses"
+  },
+  "severity": {
+    "critical": "Critical",
+    "warning": "Warning",
+    "info": "Info",
+    "all": "All severities"
+  },
+  "alertState": {
+    "open": "Open",
+    "acknowledged": "Acknowledged",
+    "resolved": "Resolved",
+    "active": "Active",
+    "all": "All states"
+  },
+  "deviceTypes": {
+    "coreRouter": "Core router",
+    "edgeRouter": "Edge router",
+    "switch": "Switch",
+    "firewall": "Firewall",
+    "wlc": "Wi-Fi controller",
+    "loadBalancer": "Load balancer",
+    "server": "Physical server",
+    "vm": "Virtual machine",
+    "database": "Database",
+    "ups": "UPS",
+    "printer": "Printer",
+    "all": "All types"
+  },
+  "categories": {
+    "network": "Network",
+    "compute": "Compute",
+    "facility": "Facilities"
+  },
+  "sites": {
+    "ruh-hq": "Riyadh HQ",
+    "ruh-dc1": "Riyadh DC1",
+    "jed-dc2": "Jeddah DC2",
+    "jed-br": "Jeddah branch",
+    "dmm-br": "Dammam / Khobar",
+    "med-br": "Madinah",
+    "mkh-br": "Makkah",
+    "tuu-br": "Tabuk",
+    "neom-br": "NEOM",
+    "ahb-br": "Abha",
+    "all": "All sites"
+  },
+  "siteKinds": {
+    "hq": "Headquarters",
+    "datacenter": "Data center",
+    "branch": "Branch"
+  },
+  "carriers": {
+    "carrierA": "Carrier A fiber",
+    "carrierB": "Carrier B 5G backup",
+    "carrierC": "Carrier C MPLS",
+    "carrierD": "Carrier D LTE backup"
+  },
+  "linkKinds": {
+    "primary": "Primary",
+    "backup": "Backup",
+    "dci": "DC interconnect"
+  },
+  "metrics": {
+    "cpu": "CPU",
+    "mem": "Memory",
+    "disk": "Disk",
+    "bwIn": "Inbound",
+    "bwOut": "Outbound",
+    "bandwidth": "Bandwidth",
+    "latency": "Latency",
+    "loss": "Packet loss",
+    "temp": "Temperature",
+    "battery": "Battery",
+    "load": "Load",
+    "uptime": "Uptime",
+    "availability": "Availability",
+    "bwUtil": "Bandwidth utilization",
+    "status": "Reachability",
+    "responseTime": "Response time",
+    "errorRate": "Error rate",
+    "throughput": "Throughput"
+  },
+  "alertTypes": {
+    "deviceDown": "Device unreachable",
+    "linkDown": "WAN link down: {{iface}} ({{carrier}})",
+    "cpuHigh": "High CPU utilization ({{value}}%)",
+    "memHigh": "High memory usage ({{value}}%)",
+    "diskFull": "Disk almost full ({{value}}% on {{mount}})",
+    "highLatency": "High latency ({{value}} ms)",
+    "packetLoss": "Packet loss at {{value}}%",
+    "tempHigh": "High temperature ({{value}}°C)",
+    "upsOnBattery": "UPS on battery — about {{runtime}} min runtime left",
+    "certExpiring": "TLS certificate {{cn}} expires in {{days}} days",
+    "configChanged": "Configuration changed by {{user}}",
+    "backupFailed": "Backup job “{{job}}” failed",
+    "interfaceFlapping": "Interface {{iface}} flapping ({{count}} changes in 10 min)",
+    "bgpPeerDown": "BGP peer {{peer}} down",
+    "appErrorRate": "Elevated error rate",
+    "appLatency": "Slow response time"
+  },
+  "logLevels": {
+    "critical": "Critical",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "debug": "Debug"
+  },
+  "facilities": {
+    "system": "System",
+    "network": "Network",
+    "security": "Security",
+    "application": "Application",
+    "database": "Database",
+    "auth": "Authentication"
+  },
+  "timeRanges": {
+    "live": "Live",
+    "15m": "15 min",
+    "1h": "1 h",
+    "6h": "6 h",
+    "24h": "24 h",
+    "7d": "7 days",
+    "14d": "14 days",
+    "30d": "30 days",
+    "90d": "90 days"
+  },
+  "duration": {
+    "d_one": "{{count}}d",
+    "d_other": "{{count}}d",
+    "h_one": "{{count}}h",
+    "h_other": "{{count}}h",
+    "m_one": "{{count}}m",
+    "m_other": "{{count}}m"
+  },
+  "interfaces": {
+    "kinds": {
+      "wan": "WAN",
+      "uplink": "Uplink",
+      "lan": "Access",
+      "mgmt": "Management",
+      "server": "Server NIC"
+    },
+    "status": {
+      "up": "Up",
+      "down": "Down",
+      "adminDown": "Admin down"
+    }
+  },
+  "calendar": {
+    "gregorian": "Gregorian",
+    "hijri": "Hijri (Umm al-Qura)",
+    "both": "Both"
+  },
+  "workweek": {
+    "label": "Work week: Sunday – Thursday",
+    "weekend": "Weekend (Fri–Sat)",
+    "businessHours": "Business hours 08:00–17:00 AST"
+  },
+  "table": {
+    "showing": "Showing {{from}}–{{to}} of {{total}}",
+    "previous": "Previous page",
+    "next": "Next page",
+    "page": "Page {{page}} of {{pages}}",
+    "rowsPerPage": "Rows per page",
+    "sortBy": "Sort by {{col}}"
+  },
+  "empty": {
+    "title": "Nothing to show",
+    "filters": "No items match the current filters.",
+    "noData": "No data for the selected period."
+  },
+  "toasts": {
+    "newCritical": "New critical alert on {{host}}",
+    "acknowledged_one": "Alert acknowledged",
+    "acknowledged_other": "{{count}} alerts acknowledged",
+    "resolved_one": "Alert resolved",
+    "resolved_other": "{{count}} alerts resolved",
+    "pdfTitle": "PDF export is simulated in this demo",
+    "pdfBody": "In the product, “{{name}}” would be generated in Arabic and English and e-mailed to you.",
+    "settingsSaved": "Preferences saved",
+    "copied": "Copied to clipboard",
+    "demoReset": "Demo data has been reset"
+  },
+  "apps": {
+    "customer-portal": {
+      "name": "Customer portal",
+      "desc": "Public self-service portal"
+    },
+    "mobile-backend": {
+      "name": "Mobile app backend",
+      "desc": "APIs for the iOS and Android apps"
+    },
+    "hr-self-service": {
+      "name": "HR self-service",
+      "desc": "Employee leave, payroll slips and requests"
+    },
+    "api-gateway": {
+      "name": "API gateway",
+      "desc": "Routing, auth and rate limiting"
+    },
+    "identity-sso": {
+      "name": "Identity & SSO",
+      "desc": "Single sign-on and MFA"
+    },
+    "payments": {
+      "name": "Payments service",
+      "desc": "Card, bill and digital-wallet payments"
+    },
+    "erp": {
+      "name": "ERP",
+      "desc": "Finance, procurement and inventory"
+    },
+    "notification": {
+      "name": "Notification service",
+      "desc": "E-mail, SMS and push delivery"
+    },
+    "dwh-etl": {
+      "name": "Data warehouse ETL",
+      "desc": "Nightly and hourly data loads"
+    }
+  },
+  "appTiers": {
+    "edge": "Edge",
+    "web": "Web",
+    "api": "API",
+    "service": "Services",
+    "data": "Data"
+  },
+  "common": {
+    "devices": "Devices",
+    "device": "Device",
+    "site": "Site",
+    "type": "Type",
+    "status": "Status",
+    "severity": "Severity",
+    "state": "State",
+    "time": "Time",
+    "created": "Created",
+    "ip": "IP address",
+    "vendor": "Vendor",
+    "model": "Model",
+    "os": "OS / firmware",
+    "serial": "Serial",
+    "rack": "Rack",
+    "hostname": "Hostname",
+    "interfaces": "Interfaces",
+    "speed": "Speed",
+    "utilization": "Utilization",
+    "in": "In",
+    "out": "Out",
+    "name": "Name",
+    "description": "Description",
+    "actions": "Actions",
+    "total": "Total",
+    "now": "now",
+    "ago": "ago",
+    "lastUpdated": "Updated {{time}}",
+    "perMonth": "/ month",
+    "yes": "Yes",
+    "no": "No",
+    "none": "None",
+    "or": "or",
+    "illustrative": "Illustrative",
+    "placeholder": "Placeholder",
+    "selectAll": "Select all",
+    "selected": "{{count}} selected",
+    "by": "by {{name}}",
+    "you": "You",
+    "since": "since {{time}}",
+    "today": "Today",
+    "hijri": "Hijri",
+    "gregorian": "Gregorian",
+    "alerts": "Alerts",
+    "openAlerts": "Open alerts",
+    "learnMore": "Learn more"
+  },
+  "footer": {
+    "rights": "© {{year}} {{brand}} (placeholder name). Demo prototype for market validation.",
+    "privacy": "Lead submissions are stored only in this browser."
+  },
+  "channels": {
+    "email": "E-mail",
+    "sms": "SMS",
+    "whatsapp": "WhatsApp",
+    "chatops": "Slack / Microsoft Teams"
+  }
+}

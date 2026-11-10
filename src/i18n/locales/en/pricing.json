@@ -1,0 +1,92 @@
+{
+  "title": "Simple pricing in Saudi riyals",
+  "subtitle": "Pay per monitored network device and per server or VM. No USD exchange risk, no hidden ingestion fees. All prices are illustrative placeholders for market validation.",
+  "monthly": "Monthly",
+  "annual": "Annual",
+  "save": "Save {{pct}}%",
+  "perDevice": "per network device / month",
+  "perServer": "per server or VM / month",
+  "billedAnnually": "billed annually",
+  "upTo": "Up to {{count}} devices",
+  "unlimited": "Unlimited devices",
+  "logs": "{{gb}} GB logs / month included",
+  "popular": "Most popular",
+  "cta": "Request early access",
+  "ctaEnterprise": "Talk to our Riyadh team",
+  "vatNote": "Prices exclude 15% VAT.",
+  "tiers": {
+    "starter": { "name": "Starter", "tagline": "For single-site organisations and small branches." },
+    "business": { "name": "Business", "tagline": "For multi-site enterprises that need apps, logs and reports." },
+    "enterprise": { "name": "Enterprise", "tagline": "For government, banking and regulated entities." }
+  },
+  "features": {
+    "networkServers": "Network, server and UPS monitoring",
+    "alertsEmailSms": "Alerts via e-mail and SMS",
+    "dashboards": "Executive and NOC dashboards",
+    "bilingual": "Full Arabic and English interface",
+    "retention30": "30-day metric & log retention",
+    "supportBusiness": "Support Sun–Thu, 08:00–17:00 AST",
+    "everythingStarter": "Everything in Starter, plus:",
+    "apm": "Application monitoring & dependencies",
+    "logExplorer": "Log explorer with live tail",
+    "whatsappChatops": "WhatsApp and Slack / Teams alerts",
+    "reports": "Scheduled bilingual reports",
+    "retention180": "180-day retention",
+    "supportPriority": "Priority support with 1-hour response",
+    "everythingBusiness": "Everything in Business, plus:",
+    "complianceReports": "Compliance evidence reports (NCA ECC, PDPL, SAMA)",
+    "sso": "SSO, audit log exports and customer-managed keys",
+    "dedicatedTenant": "Dedicated tenant or on-premises option",
+    "onPremCollector": "High-availability on-site collectors",
+    "retention365": "365-day retention",
+    "supportTam": "Named technical account manager, 24/7 critical support"
+  },
+  "calc": {
+    "title": "Cost calculator",
+    "subtitle": "Estimate your monthly cost. Adjust the sliders or type exact numbers.",
+    "devices": "Network devices",
+    "devicesHint": "Routers, switches, firewalls, Wi-Fi controllers, UPS…",
+    "servers": "Servers, VMs & databases",
+    "plan": "Plan",
+    "recommended": "Recommended",
+    "monthlyTotal": "Estimated monthly cost",
+    "annualTotal": "Annual cost",
+    "savings": "You save {{amount}} per year with annual billing",
+    "breakdown": "{{devices}} devices × {{dp}} + {{servers}} servers × {{sp}}",
+    "overLimit": "Starter supports up to {{count}} devices — Business is recommended for this size."
+  },
+  "compare": {
+    "title": "Typical international vendor vs. {{brand}}",
+    "subtitle": "Based on your calculator inputs. Illustrative figures for discussion only.",
+    "intl": "Typical international vendor",
+    "us": "{{brand}} ({{plan}})",
+    "annualCost": "Estimated annual cost",
+    "saving": "Estimated saving",
+    "savingPct": "{{pct}}% lower",
+    "rows": {
+      "currency": "Billing currency",
+      "residency": "Data residency",
+      "arabic": "Arabic interface & reports",
+      "support": "Support hours",
+      "logs": "Log ingestion",
+      "invoice": "Contracting & invoicing"
+    },
+    "intlValues": {
+      "currency": "USD — exposed to exchange-rate and card fees",
+      "residency": "Usually hosted outside the Kingdom",
+      "arabic": "Limited or none",
+      "support": "Often US/EU business hours",
+      "logs": "Typically billed per GB as an add-on",
+      "invoice": "Foreign entity"
+    },
+    "usValues": {
+      "currency": "SAR",
+      "residency": "100% inside Saudi Arabia",
+      "arabic": "Native Arabic-first, right-to-left",
+      "support": "Sunday–Thursday, Saudi business hours",
+      "logs": "Generous allowance included",
+      "invoice": "Local Saudi entity and e-invoicing"
+    },
+    "footnote": "* Figures are placeholders for market validation, not quotes. “Typical international vendor” is a composite estimate (about USD {{device}} per device and USD {{server}} per server per month, plus ~{{uplift}}% for log add-ons and premium support, converted at {{fx}} SAR/USD); it does not represent any specific vendor. All prices exclude VAT."
+  }
+}

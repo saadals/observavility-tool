@@ -1,0 +1,23 @@
+{
+  "title": "Network topology",
+  "subtitle": "Carrier links, data-center interconnects and site infrastructure. Click any device to drill in.",
+  "view": {
+    "label": "View",
+    "backbone": "WAN backbone",
+    "site": "Site detail"
+  },
+  "selectSite": "Select a site",
+  "stats": "{{devices}} devices · {{links}} links",
+  "legend": {
+    "title": "Legend",
+    "primary": "Primary WAN (active)",
+    "backupActive": "Backup WAN carrying traffic",
+    "standby": "Backup WAN (standby)",
+    "down": "Link down",
+    "dci": "DC interconnect",
+    "lan": "Site uplink"
+  },
+  "hint": "Scroll to zoom · drag to pan · click a device to open its details",
+  "edgeLabel": "{{carrier}} · {{util}}%",
+  "dcGroup": "{{site}} core"
+}
