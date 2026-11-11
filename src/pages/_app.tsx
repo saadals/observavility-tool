@@ -24,7 +24,7 @@ import { useSettings } from '@/store/settings';
  * Page layout options:
  *  - 'app'    → authenticated console (sidebar + topbar). Redirects to the landing page when signed out.
  *  - 'public' → marketing layout.
- *  - 'auto'   → console when signed in, marketing layout otherwise (pricing, data residency).
+ *  - 'auto'   → console when signed in, marketing layout otherwise (data residency).
  */
 export type PageLayout = 'app' | 'public' | 'auto';
 export type DemoPage<P = object> = NextPage<P> & { layout?: PageLayout };

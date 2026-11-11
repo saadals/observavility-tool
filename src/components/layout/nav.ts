@@ -1,5 +1,4 @@
 import {
-  BadgeDollarSign,
   Bell,
   FileBarChart,
   LayoutDashboard,
@@ -50,7 +49,6 @@ export const NAV: NavGroup[] = [
     labelKey: 'nav.sections.company',
     items: [
       { href: '/compliance', labelKey: 'nav.compliance', icon: ShieldCheck },
-      { href: '/pricing', labelKey: 'nav.pricing', icon: BadgeDollarSign },
     ],
   },
   {

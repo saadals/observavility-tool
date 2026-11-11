@@ -27,8 +27,6 @@ import enReports from './locales/en/reports.json';
 import arReports from './locales/ar/reports.json';
 import enCompliance from './locales/en/compliance.json';
 import arCompliance from './locales/ar/compliance.json';
-import enPricing from './locales/en/pricing.json';
-import arPricing from './locales/ar/pricing.json';
 import enLeads from './locales/en/leads.json';
 import arLeads from './locales/ar/leads.json';
 import enSettings from './locales/en/settings.json';
@@ -52,7 +50,6 @@ const en = {
   logs: enLogs,
   reports: enReports,
   compliance: enCompliance,
-  pricing: enPricing,
   leads: enLeads,
   settings: enSettings,
 };
@@ -70,7 +67,6 @@ const ar: typeof en = {
   logs: arLogs,
   reports: arReports,
   compliance: arCompliance,
-  pricing: arPricing,
   leads: arLeads,
   settings: arSettings,
 };

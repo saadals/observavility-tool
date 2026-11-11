@@ -6,8 +6,7 @@ A **frontend-only, clickable prototype** of a unified IT infrastructure monitori
 1. 100 % hosted inside Saudi Arabia (data residency)
 2. Designed to support alignment with NCA ECC, PDPL and SAMA expectations
 3. Arabic-first with full English support and true RTL/LTR mirroring
-4. Local SAR pricing
-5. Local support in Saudi business hours (Sunday–Thursday, AST)
+4. Local support in Saudi business hours (Sunday–Thursday, AST)
 
 > **This is a market-validation demo.** There is no backend: every number, device, alert and log line is
 > mock data generated in the browser from a seeded generator. “Tayf” is a placeholder name.
@@ -54,7 +53,7 @@ Sign in with **any e-mail and password**, or click “Continue with demo account
 src/
   config/brand.ts        ← the ONLY place the product name lives
   pages/                 ← routes: index (landing/login), overview, network, devices/[id], topology,
-                           servers, alerts/{index,rules}, logs, reports, compliance, pricing,
+                           servers, alerts/{index,rules}, logs, reports, compliance,
                            settings, admin/leads, 404
   components/
     layout/              ← AppShell, Sidebar, Topbar, PublicLayout
@@ -66,7 +65,7 @@ src/
   mock/                  ← seeded data layer (see §5)
   store/                 ← Zustand stores (settings, auth, live, leads, rules, ui)
   i18n/                  ← i18next setup + locales/{en,ar}/<section>.json
-  lib/                   ← formatters (dates, SAR, units), hooks, pricing model, CSV export
+  lib/                   ← formatters (dates, SAR, units), hooks, CSV export
   styles/globals.css
 scripts/                 ← i18n checker, static preview server
 ```
@@ -101,7 +100,6 @@ Everything is deterministic: the same fleet, story and history appear on every l
 | `src/mock/logs.ts` | Log templates per device type, including Arabic-language application logs |
 | `src/mock/apps.ts` | Business applications and their dependencies |
 | `src/mock/compliance.ts` | Illustrative NCA ECC / PDPL / SAMA control-area mapping (texts in `locales/*/compliance.json`) |
-| `src/lib/pricing.ts` | SAR tiers, annual discount and the illustrative “international vendor” comparison inputs |
 | `src/store/live.ts` | Live behaviour: 3-second tick, how often new incidents appear and auto-resolve |
 | `src/store/rules.ts` | Default alert rules |
 
@@ -129,7 +127,7 @@ also restores it.
 
 ## 7. Early-access leads
 
-The **Request early access** button (header, landing page, pricing) opens a form: name, organisation, role,
+The **Request early access** button (header and landing page) opens a form: name, organisation, role,
 industry, fleet size, current monitoring approach, biggest pain point, e-mail, mobile and a PDPL-style consent.
 Submissions are stored in **this browser’s localStorage** and listed at **`/admin/leads`** (sidebar → Admin)
 with simple analytics and **CSV export** (UTF-8 with BOM so Arabic opens correctly in Excel).
@@ -169,14 +167,13 @@ Start in **Arabic** (the default) and switch languages at least once to show tha
 
 | Time | Where | What to show and say |
 | --- | --- | --- |
-| 0:00 | **Landing** | “Hosted in Saudi Arabia” badge and the five pillars. Toggle **English ↔ العربية** to show full mirroring. Sign in with any e-mail. |
+| 0:00 | **Landing** | “Hosted in Saudi Arabia” badge and the four pillars. Toggle **English ↔ العربية** to show full mirroring. Sign in with any e-mail. |
 | 0:40 | **Overview** | Health score, devices up/warning/down, SLA % with *business-hours (Sun–Thu)* SLA, the Kingdom map. Hover **NEOM** (amber): the problem-device list and live feed show its primary fiber link is down and the site is running on the Carrier B 5G backup. Point out the AST time and Hijri date in the header. |
 | 1:30 | **NEOM → device** | Click NEOM on the map → filtered inventory → **NUM-BR-ER01**. Live charts (Live/1h/…/90d), interface `Gi0/0/0` down, 5G backup carrying traffic, failover entries in the related logs, 90-day uptime strip. |
 | 2:15 | **Topology** | Backbone view: amber backup link to NEOM, red **Tabuk** switch outage, DC interconnect Riyadh ↔ Jeddah. Click any node to drill in. |
 | 2:45 | **Alerts** | Filter *Critical*, expand an alert for its timeline and Arabic runbook, **Acknowledge**, then **Resolve** — the dashboards recover. Open **Alert rules → New rule**: natural-language preview, “business hours only”, 7-day backtest. |
 | 3:30 | **Logs** | Search an Arabic term such as `المدفوعات` — matches are highlighted; show live tail and level filters. |
-| 3:55 | **Data residency** | “Data never leaves the Kingdom”: data-flow, Riyadh DC1 / Jeddah DC2, the NCA ECC / PDPL / SAMA checklist (stress: *designed to support alignment*, illustrative). |
-| 4:30 | **Pricing** | Enter the prospect’s device and server counts in the calculator, show annual savings and the illustrative international comparison. Close with **Request early access**. |
+| 3:55 | **Data residency** | “Data never leaves the Kingdom”: data-flow, Riyadh DC1 / Jeddah DC2, the NCA ECC / PDPL / SAMA checklist (stress: *designed to support alignment*, illustrative). Close with **Request early access**. |
 
 Afterwards (not in front of the prospect) open `/admin/leads` and export the CSV.
 
@@ -193,7 +190,6 @@ a new incident appears roughly every 45 seconds and critical ones raise a toast.
 - **The map outline is stylised**, with some city markers nudged apart for legibility.
 - **Compliance content is illustrative** — not a certification, attestation or legal statement; control
   areas are paraphrased, not the official control numbering.
-- **Pricing and the international comparison are placeholders** for validation, not quotes of any vendor.
 - **Vendors and carriers are generic** (“Vendor A”, “Carrier A fiber”…) to avoid trademark issues.
 - **Mobile:** the dashboard, alerts, inventory, logs and forms are designed for phones; the topology and
   dependency graphs are best viewed on a tablet or larger.

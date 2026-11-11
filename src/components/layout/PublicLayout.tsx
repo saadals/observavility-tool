@@ -11,7 +11,6 @@ import { useUi } from '@/store/ui';
 import { LangToggle, ThemeToggle } from './Topbar';
 
 const LINKS = [
-  { href: '/pricing', key: 'nav.pricing' },
   { href: '/compliance', key: 'nav.compliance' },
 ];
 

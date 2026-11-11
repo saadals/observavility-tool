@@ -1,4 +1,4 @@
-import { Activity, ArrowRight, BadgeDollarSign, Headset, Languages, Lock, MapPin, Network, ScrollText, Server, ShieldCheck, Rocket, Scale } from 'lucide-react';
+import { Activity, ArrowRight, Headset, Languages, Lock, MapPin, Network, ScrollText, Server, ShieldCheck, Rocket, Scale } from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useMemo, useState, type FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -18,7 +18,6 @@ const PILLARS = [
   { key: 'residency', icon: MapPin },
   { key: 'regulatory', icon: Scale },
   { key: 'arabic', icon: Languages },
-  { key: 'pricing', icon: BadgeDollarSign },
   { key: 'support', icon: Headset },
 ] as const;
 
@@ -179,7 +178,7 @@ const Landing: DemoPage = () => {
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
         <h2 className="text-xl font-semibold text-fg sm:text-2xl">{t('landing.pillars.title')}</h2>
         <div className="sadu-band mt-3 h-2 w-28 opacity-50" aria-hidden />
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {PILLARS.map(({ key, icon: Icon }) => (
             <div key={key} className="card p-5 transition-colors hover:border-brand/40">
               <span className="grid size-10 place-items-center rounded-xl bg-brand/12 text-brand">

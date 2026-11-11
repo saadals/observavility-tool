@@ -2,7 +2,7 @@
   "pageTitle": "Infrastructure monitoring hosted in Saudi Arabia",
   "eyebrow": "Saudi-hosted observability platform",
   "headline": "Every network, server and application in one view — with data that never leaves the Kingdom.",
-  "sub": "{{brand}} unifies network, server, application and log monitoring for Saudi organisations. Arabic-first, priced in SAR, supported locally during your working hours.",
+  "sub": "{{brand}} unifies network, server, application and log monitoring for Saudi organisations. Arabic-first and supported locally during your working hours.",
   "ctaPrimary": "Request early access",
   "ctaSecondary": "Explore the demo",
   "login": {
@@ -34,10 +34,6 @@
     "arabic": {
       "title": "Arabic-first, fully bilingual",
       "body": "A true right-to-left interface, Arabic reports and alerts, Hijri and Gregorian dates, Riyadh time."
-    },
-    "pricing": {
-      "title": "Local pricing in SAR",
-      "body": "Simple per-device pricing in Saudi riyals — no USD exchange risk, no surprise add-ons."
     },
     "support": {
       "title": "Local support, your hours",
